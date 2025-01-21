@@ -11,7 +11,7 @@ export default function Consult() {
 
   useEffect(() => {
     setDoctors(doctorsData.doctors);
-    setSpecialties(['All', ...new Set(doctorsData.specialties.filter(Boolean))]);
+    setSpecialties(['All', ...doctorsData.specialties.map(specialty => specialty.name)]);
   }, []);
 
   const filteredDoctors = doctors.filter((doctor) => {
@@ -24,26 +24,6 @@ export default function Consult() {
   const handleCardClick = (doctorUsername) => {
     navigate(`/chat/${doctorUsername}`);
   };
-
-
-  /**     -- Uncomment this code block to fetch data from the backend
-    const [doctors, setDoctors] = useState([]);
-  const [specialties, setSpecialties] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://127.0.0.1:5000/');
-        setDoctors(response.data.doctors);
-        setSpecialties(['All', ...response.data.specialties]);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-     */
 
   return (
     <section className="bg-slate-50">

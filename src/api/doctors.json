@@ -7,19 +7,19 @@
       "username": "Dr.James Smith"
     },
     {
-      "bio": "5 years of experiance in neurologist with a focus on neurodegenerative diseases and stroke management.",
+      "bio": "5 years of experience in neurologist with a focus on neurodegenerative diseases and stroke management.",
       "image_filename": null,
       "specialty": "neurology",
       "username": "Dr.Susan Martin"
     },
     {
-      "bio": "7 years of experinace in orthopedic surgeon specializing in sports injuries and joint replacement.",
+      "bio": "7 years of experience in orthopedic surgeon specializing in sports injuries and joint replacement.",
       "image_filename": null,
       "specialty": "orthopedics",
       "username": "Dr.Michael Johnson"
     },
     {
-      "bio": "10 years expertise in child development and preventive care.focusing on early diagnosis and management of common pediatric conditions.",
+      "bio": "10 years expertise in child development and preventive care, focusing on early diagnosis and management of common pediatric conditions.",
       "image_filename": null,
       "specialty": "pediatrics",
       "username": "Dr.Emily Clark"
@@ -50,10 +50,9 @@
     }
   ],
   "specialties": [
-    "orthopedics",
-    null,
-    "pediatrics",
-    "cardiology",
-    "neurology"
+    { "name": "orthopedics" },
+    { "name": "pediatrics" },
+    { "name": "cardiology" },
+    { "name": "neurology" }
   ]
 }
