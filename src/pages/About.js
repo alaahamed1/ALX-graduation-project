@@ -1,6 +1,6 @@
 import React from 'react';
 import SecTwo from '../components/about/SecTwo';
-import SliderService from '../components/SliderService';
+import SliderService from '../components/about/SliderService';
 
 export default function About() {
     return (
