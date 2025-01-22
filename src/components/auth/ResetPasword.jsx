@@ -13,17 +13,18 @@ export default function ResetPasword() {
             .required('Email is required'),
     });
     const onSubmit = async (values, { setSubmitting, resetForm }) => {
-        try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/reset_password`, values);
-            console.log('Server Response:', response.data);
-            alert('Reset password email sent successfully!');
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Error submitting form');
-        } finally {
-            setSubmitting(false);
-            resetForm();
-        }
+        // try {
+        //     const response = await axios.post(`${process.env.REACT_APP_API_URL}/reset_password`, values);
+        //     console.log('Server Response:', response.data);
+        //     alert('Reset password email sent successfully!');
+        // } catch (error) {
+        //     console.error('Error submitting form:', error);
+        //     alert('Error submitting form');
+        // } finally {
+        //     setSubmitting(false);
+        //     resetForm();
+        // }
+        console.log(values)
     };
     return (
         <>

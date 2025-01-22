@@ -29,18 +29,18 @@ export default function SignUp() {
     });
 
     const onSubmit = async (values, { setSubmitting, resetForm }) => {
-        try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/register`, values);
+        // try {
+        //     const response = await axios.post(`${process.env.REACT_APP_API_URL}/register`, values);
         
-            console.log("printing respose",response);
-            navigate('/signin');
-        } catch (error) {
-            console.log("print error respose", error.response)
-            console.error('Error submitting form:', error);
-        } finally {
-            setSubmitting(false);
-            resetForm();
-        }
+        //     console.log("printing respose",response);
+        //     navigate('/signin');
+        // } catch (error) {
+        //     console.log("print error respose", error.response)
+        //     console.error('Error submitting form:', error);
+        // } finally {
+        //     setSubmitting(false);
+        //     resetForm();
+        // }
         console.log('Form Values:', values);
     }
     return (

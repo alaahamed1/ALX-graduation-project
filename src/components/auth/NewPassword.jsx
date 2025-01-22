@@ -13,17 +13,18 @@ const validationSchema = Yup.object({
     password2: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match').required('Confirm your new password'),
 });
 const onSubmit = async (values, { setSubmitting, resetForm }) => {
-    try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/reset_password/<token>/<int:user_id>`, values);
-        console.log('Response:', response);
-        alert('Password reset successful');
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Error resetting password');
-    } finally {
-        setSubmitting(false);
-        resetForm();
-    }
+    // try {
+    //     const response = await axios.post(`${process.env.REACT_APP_API_URL}/reset_password/<token>/<int:user_id>`, values);
+    //     console.log('Response:', response);
+    //     alert('Password reset successful');
+    // } catch (error) {
+    //     console.error('Error:', error);
+    //     alert('Error resetting password');
+    // } finally {
+    //     setSubmitting(false);
+    //     resetForm();
+    // }
+    console.log(values)
 };
 
 export default function NewPassword() {

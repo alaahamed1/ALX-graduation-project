@@ -16,17 +16,19 @@ export default function SignIn() {
         password: Yup.string().required('Password is required to login'),
     })
     const onSubmit = async (values, { setSubmitting, resetForm }) => {
-        try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, values);
-            console.log('Server Response:', response.data);
-            localStorage.setItem('isLoggedIn', true);
-            navigate('/');
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Failed to login. Please check your network connection and try again.');
-        } finally {
-            setSubmitting(false);
-        }
+        // try {
+        //     const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, values);
+        //     console.log('Server Response:', response.data);
+        //     console.log(values)
+        //     localStorage.setItem('isLoggedIn', true);
+        //     navigate('/');
+        // } catch (error) {
+        //     // console.error('Error submitting form:', error);
+        //     // alert('Failed to login. Please check your network connection and try again.');
+        // } finally {
+        //     setSubmitting(false);
+        // }
+        console.log(values)
     }
 
     return (
