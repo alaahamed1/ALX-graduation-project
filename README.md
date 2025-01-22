@@ -80,3 +80,10 @@ also Mock-up api used to semulate the data fetched from the server without need 
 in this repo you will find a backend code including a restful API connected professionally with this react template.
 
 [MedifyCare_new](https://github.com/alaahamed1/MedifyCare_new)
+
+---
+## **Screenshots**
+
+![App Screenshot](path/to/LandingPage.png)
+![App Screenshot](path/to/SignIn.png)
+![App Screenshot](path/to/data.png)
