@@ -78,7 +78,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## **Technical Details**
 
-This project leverages Vue.js for the frontend due to its reactivity and smooth user experience.
+This project leverages React.js for the frontend due to its reactivity and smooth user experience.
 also Mock-up api used to semulate the data fetched from the server without need backend server running.
 in this repo you will find a backend code including a restful API connected professionally with this react template.
 
