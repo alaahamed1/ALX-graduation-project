@@ -1,8 +1,6 @@
-## **Installation**
-
 To set up the project locally:
 
-1. Clone the repository:
+1. ## Clone the repository:
 
    ```sh
    git clone https://github.com/alaahamed1/ALX-graduation-project.git
@@ -18,12 +16,12 @@ To set up the project locally:
     npm install
     ```
 
-3. run the json server
+- run the json server
    ```bash
     npm run server
 ````
 
-### `npm start`
+3. ## `npm start`
 
 ```bash
 npm start
@@ -32,7 +30,7 @@ npm start
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### The structure of the repository
+4. ## The structure of the repository
 
 ```bash
    ├── public
@@ -70,13 +68,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 #also you can take a look on my commit history on this repository
 [MedifyCare_new](https://github.com/alaahamed1/MedifyCare_new)
 
-## **License**
+5. ## **License**
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
-## **Technical Details**
+6. ## **Technical Details**
 
 This project leverages React.js for the frontend due to its reactivity and smooth user experience.
 also Mock-up api used to semulate the data fetched from the server without need backend server running.
@@ -86,7 +84,7 @@ in this repo you will find a backend code including a restful API connected prof
 
 ---
 
-## **Screenshots**
+7. ## **Screenshots**
 
 ![App Screenshot](path/to/LandingPage.png)
 
